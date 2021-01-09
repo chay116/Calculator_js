@@ -1,0 +1,55 @@
+body {
+  font-family: sans-serif;
+}
+
+#cal {
+  padding: 50px;
+  height: 500px;
+  width: 500px;
+  background-color: black;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 120px);
+  grid-template-areas:
+    "result result result csymbol"
+    "n7 n8 n9 plus" "n4 n5 n6 minus"
+    "n1 n2 n3 multiple" "n0 n0 equal divide";
+}
+
+.reset {
+  background-color: gray;
+}
+
+.number {
+  background-color: rgb(94, 86, 86);
+}
+
+.symbol {
+  background-color: rgb(206, 112, 35);
+}
+
+.a {
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+}
+
+.a:active {
+  opacity: 0.9;
+}
+
+.result {
+  border-radius: 30px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  text-overflow: clip;
+}
